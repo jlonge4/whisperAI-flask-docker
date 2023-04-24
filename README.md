@@ -4,12 +4,13 @@ I built this project because there was no user friendly way to upload a file to 
 
 ################################################################
 
-How to use:
+#How to use:
 
 docker build -t whisper-app -f Dockerfile .
 
 docker run -it -p 5000:5000 whisper-app
 
-# Copy your .srt file from the docker container to the host for use
+// Copy your .srt file from the docker container to the host for use
+
 sudo docker cp whisper-app:/whisperapp/test.srt /mnt
 
