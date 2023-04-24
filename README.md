@@ -6,11 +6,17 @@ I built this project because there was no user friendly way to upload a file to 
 
 # How to use:
 
-docker build -t whisper-app -f Dockerfile .
+Configure docker desktop to use WSL
 
-docker run -it -p 5000:5000 whisper-app
+Run: git clone https://github.com/jlonge4/whisperAI-flask-docker.git
+
+Add the .wslconfig file to C://Users/{your_name} and Path environmental variables
+
+Run: docker build -t whisper-app -f Dockerfile .
+
+Run: docker run -it -p 5000:5000 whisper-app
 
 # Copy your .srt file:
 
-sudo docker cp whisper-app:/whisperapp/test.srt /mnt
+Run: sudo docker cp whisper-app:/whisperapp/test.srt /mnt
 
