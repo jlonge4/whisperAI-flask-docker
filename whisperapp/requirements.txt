@@ -1,0 +1,4 @@
+flask_wtf
+wtforms
+werkzeug
+numpy == 1.18.5
