@@ -3,7 +3,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /whisperapp
 
-RUN apt-get -y update && apt-get install -y python3 \
+RUN apt-get -y update && apt-get install -y python3.9 \
 ffmpeg \
 python3-pip
 COPY requirements.txt requirements.txt
